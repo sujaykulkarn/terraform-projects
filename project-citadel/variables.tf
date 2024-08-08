@@ -12,3 +12,10 @@ variable "instance_type" {
     type = string
     default = "m5.large"
 }
+
+variable "password" {
+    type = string
+    default = "qwerty"
+    sensitive = true
+  
+}

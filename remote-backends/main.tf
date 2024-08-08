@@ -12,4 +12,4 @@ resource "aws_instance" "webserver" {
     when = destroy
     command = "echo Instance ${aws_instance.webserver .public_ip} Destroyed! >> /tmp/ips.txt"
   }
-} 
+}
